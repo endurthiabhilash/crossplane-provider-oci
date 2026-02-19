@@ -95,6 +95,7 @@ var ServiceWildcards = []string{
 	"oci_streaming_.*",               // 3
 	"oci_vault_.*",                   // 1
 	"oci_waf_.*",                     // 3
+	"oci_limits_.*",                  // 1
 }
 
 // GetProvider returns provider configuration

@@ -28,6 +28,7 @@ import (
 	v1alpha1healthchecks "github.com/oracle/provider-oci/apis/healthchecks/v1alpha1"
 	v1alpha1identity "github.com/oracle/provider-oci/apis/identity/v1alpha1"
 	v1alpha1kms "github.com/oracle/provider-oci/apis/kms/v1alpha1"
+	v1alpha1limits "github.com/oracle/provider-oci/apis/limits/v1alpha1"
 	v1alpha1loadbalancer "github.com/oracle/provider-oci/apis/loadbalancer/v1alpha1"
 	v1alpha1logging "github.com/oracle/provider-oci/apis/logging/v1alpha1"
 	v1alpha1monitoring "github.com/oracle/provider-oci/apis/monitoring/v1alpha1"
@@ -72,6 +73,7 @@ func init() {
 		v1alpha1healthchecks.SchemeBuilder.AddToScheme,
 		v1alpha1identity.SchemeBuilder.AddToScheme,
 		v1alpha1kms.SchemeBuilder.AddToScheme,
+		v1alpha1limits.SchemeBuilder.AddToScheme,
 		v1alpha1loadbalancer.SchemeBuilder.AddToScheme,
 		v1alpha1logging.SchemeBuilder.AddToScheme,
 		v1alpha1monitoring.SchemeBuilder.AddToScheme,

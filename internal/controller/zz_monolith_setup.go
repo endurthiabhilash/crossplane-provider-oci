@@ -315,6 +315,7 @@ import (
 	vault "github.com/oracle/provider-oci/internal/controller/kms/vault"
 	vaultreplication "github.com/oracle/provider-oci/internal/controller/kms/vaultreplication"
 	verify "github.com/oracle/provider-oci/internal/controller/kms/verify"
+	quota "github.com/oracle/provider-oci/internal/controller/limits/quota"
 	backend "github.com/oracle/provider-oci/internal/controller/loadbalancer/backend"
 	backendset "github.com/oracle/provider-oci/internal/controller/loadbalancer/backendset"
 	certificateloadbalancer "github.com/oracle/provider-oci/internal/controller/loadbalancer/certificate"
@@ -773,6 +774,7 @@ func Setup_monolith(mgr ctrl.Manager, o controller.Options) error {
 		vault.Setup,
 		vaultreplication.Setup,
 		verify.Setup,
+		quota.Setup,
 		backend.Setup,
 		backendset.Setup,
 		certificateloadbalancer.Setup,
